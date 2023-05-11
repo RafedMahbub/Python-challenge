@@ -54,7 +54,6 @@ df = pd.DataFrame({"Financial Analysis":["Total Months:","Total Revenue:","Avera
                    "Value": [Count,Total_Amount,profitloss_average,greatest_increase,greatest_decrease]})
 
 #write Data Frame output as txt
-#'C:/Users/rafed.mahbub/Documents/MyDoc/MyDoc/UBHM/Py/Assignment/python-challenge/PyBank/output.txt'
 with open(r'output_txt', 'a') as f:
     df_string = df.to_string(header=True, index=False)
     f.write(df_string)
